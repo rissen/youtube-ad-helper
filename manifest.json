@@ -1,19 +1,20 @@
 {
-    "name": "YouTube Skip Ads",
-    "description": "YouTube Skip Ads",
+    "name": "YouTube Ads Helper",
+    "description": "Skip YouTube Ads and hide baner automatically.",
     "version": "1.0",
     "author": "@n0nn1ck",
+    "homepage_url": "https://github.com/rissen/youtube-ad-helper",
     "manifest_version": 3,
     "content_scripts": [
         {
             "matches": [
                 "*://*.youtube.com/*"
             ],
+            "run_at": "document_end",
+            "all_frames": true,
             "js": [
                 "content.js"
-            ],
-            "run_at": "document_end",
-            "all_frames": true
+            ]
         }
     ],
     "icons": {
