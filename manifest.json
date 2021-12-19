@@ -1,0 +1,23 @@
+{
+    "name": "YouTube Skip Ads",
+    "description": "YouTube Skip Ads",
+    "version": "1.0",
+    "author": "@n0nn1ck",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "icons": {
+        "64": "logo-64.png",
+        "128": "logo-128.png"
+    }
+}
